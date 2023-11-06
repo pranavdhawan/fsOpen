@@ -6,7 +6,7 @@ const CountryDetail = (props) => {
   const [weather, setWeather] = useState(null)
 
   useEffect(() => {
-    const wUrl = `http://api.openweathermap.org/data/2.5/weather?q=${props.country.capital}&appid=a436c4bd3875f6db49f62736b9d47013`
+    const wUrl = `http://api.openweathermap.org/data/2.5/weather?q=${props.country.capital}&appid=`
     axios
       .get(wUrl)
       .then(response => {
